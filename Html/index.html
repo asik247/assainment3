@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assainment 03</title>
     <!-- Css link added here. -->
-     <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="/Css/style.css">
+    <!-- Tailwind play cdn link. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    
+    <nav class="container flex justify-between items-center bg-violet-600">
+        <div class="logo">
+            <h2 class="text-2xl">Tech <span class="via-violet-800">Wave</span></h2>
+        </div>
+        <ul class="listItems flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Episodes</a></li>
+            <li><a href="#">Host</a></li>
+        </ul>
+        <button class="border-2 text-yellow-100 !p-1 rounded-[10px]">Subscribe</button>
+    </nav>
 </body>
+
 </html>

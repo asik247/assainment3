@@ -1,5 +1,16 @@
+@import "tailwindcss";
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.container{
+    width: 1500px;
+    margin:5px auto;
+    padding:10px 15px;
+    border-radius: 10px;
+}
+.listItems li{
+    margin: 0 5px;
 }
