@@ -2,29 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assainment 03</title>
-    <!-- Css link added here. -->
-    <link rel="stylesheet" href="/Css/style.css">
-    <!-- Tailwind play cdn link. -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- font awesome cnd link here. -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assainment 03</title>
+  <!-- Css link added here. -->
+  <link rel="stylesheet" href="/Css/style.css">
+  <!-- Tailwind play cdn link. -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- font awesome cnd link here. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <nav class="container flex justify-between items-center bg-gradient-to-r from-green-400 via-blue-500 to-purple-600">
-        <div class="logo">
-            <h2 class="text-2xl text-white">Tech <span class="text-green-600">Wave</span></h2>
-        </div>
-        <ul class="listItems flex text-white">
-            <li ><a class="hover:text-blue-800" href="#">Home</a></li>
-            <li ><a class="hover:text-blue-800" href="#">Episodes</a></li>
-            <li ><a class="hover:text-blue-800" href="#">Host</a></li>
-        </ul>
-        <button class="border-2 text-yellow-100 !p-1 rounded-[10px]">Subscribe <i class="fa-solid fa-angle-right"></i></button>
-    </nav>
+  <nav class="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between md:grid md:grid-cols-3 pl-5">
+
+      <!-- Logo -->
+      <div class="logo">
+        <h2 class="text-2xl text-white font-bold">
+          Tech <span class="text-green-200">Wave</span>
+        </h2>
+      </div>
+
+      <!-- Menu (Desktop) -->
+      <ul class="hidden md:flex justify-center gap-6 text-white">
+        <li><a class="hover:text-blue-800 transition" href="#">Home</a></li>
+        <li><a class="hover:text-blue-800 transition" href="#">Episodes</a></li>
+        <li><a class="hover:text-blue-800 transition" href="#">Host</a></li>
+      </ul>
+
+      <!-- Button (Desktop) -->
+      <div class="hidden md:flex justify-end">
+        <button
+          class="border-2 border-white text-yellow-100 px-4 py-1 rounded-lg hover:bg-white hover:text-purple-600 transition">
+          Subscribe <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-white text-2xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden px-4 pb-4">
+      <ul class="flex flex-col gap-3 text-white">
+        <li><a class="hover:text-blue-800" href="#">Home</a></li>
+        <li><a class="hover:text-blue-800" href="#">Episodes</a></li>
+        <li><a class="hover:text-blue-800" href="#">Host</a></li>
+        <button class="mt-2 border-2 border-white text-yellow-100 px-4 py-1 rounded-lg">
+          Subscribe <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="relative">
+
+    <div class="child absolute">
+      <img src="/assets/hero-circle.png" alt="" ">
+    </div>
+
+
+</header>
+<section class=" main border-4 w-[900px] h-[400px]">
+      <h1 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad nam modi dolor fuga unde illum
+        dolores, fugit odit. Dolorem iste quos beatae est porro sequi natus esse et laudantium!</h1>
+      </section>
+
 </body>
 
 </html>
